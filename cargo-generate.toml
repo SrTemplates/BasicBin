@@ -1,0 +1,28 @@
+[template]
+cargo_generate_version = ">=0.9.0"
+exclude = [".github/workflows/ci.yml", ".github/workflows/itch.yml"]
+
+[placeholders.license]
+type = "string"
+prompt = "What licenses will the project have?"
+default = "all"
+choices = ["all", "MIT", "APACHE"]
+
+[placeholders.log_deps]
+type = "bool"
+prompt = "Would you like log packages to be added?"
+default = true
+
+[placeholders.deploy_release]
+type = "bool"
+prompt = "Would you like to deploy it in GitHub releases?"
+default = true
+
+#
+# License
+#
+[conditional.'license != "MIT" && license != "all"']
+ignore = ["LICENSE-MIT"]
+
+[conditional.'license != "APACHE" && license != "all"']
+ignore = ["LICENSE-APACHE"]
