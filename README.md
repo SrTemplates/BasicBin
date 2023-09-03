@@ -33,7 +33,6 @@ cargo generate SrTemplates/Bevy
 * **clean** - Clean all target directory
 * **clippy** - Check code quality
 * **default** - Check all issues, format and code quality
-* **dev** - Run native launcher with development configuration
 * **fix-all** - Try fix all clippy and format issues
 * **fix-fmt** - Fix format
 * **fmt** - Check format quality
