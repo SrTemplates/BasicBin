@@ -1,5 +1,5 @@
 # Generate basic binary Rust Application
-> [!NOTE]
+> [!WARNING]
 > This need [cargo-generate](https://github.com/cargo-generate/cargo-generate) to expand this template
 
 # Requirements
